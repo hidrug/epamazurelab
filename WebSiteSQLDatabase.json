@@ -173,6 +173,9 @@
             "[concat('Microsoft.Web/Sites/', parameters('webAppName'))]"
           ],
           "properties": {
+            "RepoUrl": "https://github.com/FeschenkoAlex/epamazurelab.git",
+            "branch": "master",
+            "IsManualIntegration": false,
             "DefaultConnection": {
               "value": "[concat('Data Source=tcp:', reference(concat('Microsoft.Sql/servers/', variables('sqlserverName'))).fullyQualifiedDomainName, ',1433;Initial Catalog=', parameters('databaseName'), ';User Id=', parameters('administratorLogin'), '@', variables('sqlserverName'), ';Password=', parameters('administratorLoginPassword'), ';')]",
               "type": "SQLServer"

@@ -6,10 +6,13 @@
       "value": "EpamAzureLabAppPlan"
     },
     "webAppName": {
-      "value": null
+      "value": "epamazurelab5"
     },
     "administratorLogin": {
       "value": "GeekQuizAdmin"
+    },
+    "administratorLoginPassword": {
+      "value": "~SomeSuperStrongPassword12"
     },
     "databaseName": {
       "value": "GeekQuizDB"
