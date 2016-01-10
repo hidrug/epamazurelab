@@ -189,7 +189,7 @@
           "properties": {
             "RepoUrl": "https://github.com/FeschenkoAlex/epamazurelab.git",
             "branch": "master",
-            "IsManualIntegration": false
+            "IsManualIntegration": true
           }
         }
       ]
