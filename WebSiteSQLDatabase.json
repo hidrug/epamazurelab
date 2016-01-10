@@ -178,10 +178,8 @@
               "type": "SQLServer"
             }
           }
-        }
-      ],
-	  "resources": [
-        {
+        },
+		{
           "apiVersion": "2015-08-01",
           "name": "web",
           "type": "sourcecontrols",
@@ -191,7 +189,7 @@
           "properties": {
             "RepoUrl": "https://github.com/FeschenkoAlex/epamazurelab.git",
             "branch": "master",
-            "IsManualIntegration": true
+            "IsManualIntegration": false
           }
         }
       ]
