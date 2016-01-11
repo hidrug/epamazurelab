@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
   "parameters": {
     "hostingPlanName": {
-      "value": "EpamAzureLabAppPlan"
+      "value": "epamazurelab3"
     },
     "webAppName": {
-      "value": "epamazurelab5"
+      "value": "epamazurelab3"
     },
     "administratorLogin": {
       "value": "GeekQuizAdmin"
