@@ -1,7 +1,5 @@
-﻿@{
-    ViewBag.Title = "Play";
-}
-3333333333333
+﻿@inherits System.Web.Mvc.WebViewPage
+@using System.Web.Optimization
 <div id="bodyContainer" ng-app="QuizApp">
     <section id="content">
         <div class="container">
@@ -24,7 +22,6 @@
         </div>
     </section>
 </div>
-
 @section scripts {
     @Scripts.Render("~/Scripts/angular.js")
     @Scripts.Render("~/Scripts/app/quiz-controller.js")

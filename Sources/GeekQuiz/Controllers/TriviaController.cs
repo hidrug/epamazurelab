@@ -13,7 +13,6 @@ using GeekQuiz.Models;
 
 namespace GeekQuiz.Controllers
 {
-    [Authorize]
     public class TriviaController : ApiController
     {
         private TriviaContext db = new TriviaContext();
@@ -48,7 +47,7 @@ namespace GeekQuiz.Controllers
         [ResponseType(typeof(TriviaQuestion))]
         public async Task<IHttpActionResult> Get()
         {
-            var userId = User.Identity.Name;
+            var userId = "Administrator@epamazurelab.onmicrosoft.com";
 
             TriviaQuestion nextQuestion = await this.NextQuestionAsync(userId);
 
@@ -80,7 +79,7 @@ namespace GeekQuiz.Controllers
                 return this.BadRequest(this.ModelState);
             }
 
-            answer.UserId = User.Identity.Name;
+            answer.UserId = "Administrator@epamazurelab.onmicrosoft.com";
 
             var isCorrect = await this.StoreAsync(answer);
             return this.Ok<bool>(isCorrect);
