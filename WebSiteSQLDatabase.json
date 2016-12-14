@@ -187,7 +187,7 @@
             "[resourceId('Microsoft.Web/Sites', parameters('webAppName'))]"
           ],
           "properties": {
-            "RepoUrl": "https://github.com/FeschenkoAlex/epamazurelab.git",
+            "RepoUrl": "https://github.com/hidrug/epamazurelab.git",
             "branch": "master",
             "IsManualIntegration": true
           }
